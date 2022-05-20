@@ -8,19 +8,19 @@ import Head from 'next/head'
 import { store } from '../redux/store'
 import { addProdReducer } from '../redux/reducers/productsReducer'
 
-export async function getStaticProps() {
-    const res = await fetch('http://localhost:8000/stock')
-    const data = await res.json()
-    return {
-        props: {
-            data,
-        },
-    }
-}
+// export async function getStaticProps() {
+//     const res = await fetch('http://localhost:8000/stock')
+//     const data = await res.json()
+//     return {
+//         props: {
+//             data,
+//         },
+//     }
+// }
 
 
 export default function home({ data }) {
-    store.dispatch(addProdReducer(data))
+    // store.dispatch(addProdReducer(data))
     return (
         <>
             <Head>

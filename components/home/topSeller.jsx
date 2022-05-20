@@ -9,12 +9,12 @@ import style from "../../styles/index.module.css"
 
 
 export function TopSellerComp() {
-    const data = store.getState().prod
+    // const data = store.getState().prod
     return (
         <div className="container text-center mt-5 mb-5">
             <h1 className="display-4 fw-bold">Top Sellers</h1>
             <div className="row row-cols-lg-4 row-cols-2 mt-5">
-                <TopCol data={data} />
+                {/* <TopCol data={data} /> */}
             </div>
         </div>
     )
