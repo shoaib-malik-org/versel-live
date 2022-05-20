@@ -1,0 +1,33 @@
+.navName {
+    text-decoration: none;
+    color: black;
+    font-size: 3.5vw;
+}
+
+.formSearch:focus {
+    outline: none;
+}
+
+.formSearch {
+    width: 15vw;
+    border-radius: 20px;
+    border: 1px solid grey;
+    padding: 5px 4px 5px 15px;
+}
+
+.navImg{
+    height: 35px;
+    width: 35px;
+}
+
+.cartCount{
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    font-size: 14.1px;
+    background-color: red;
+    border-radius: 100%;
+    color: white;
+    right: 0px;
+    top: -5px;
+}

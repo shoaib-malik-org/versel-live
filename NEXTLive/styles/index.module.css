@@ -1,0 +1,72 @@
+.home-img {
+    height: 400px;
+    width: 400px;
+}
+
+.bg-gradient {
+    background: rgb(218, 151, 255);
+    background: linear-gradient(32deg, rgba(218, 151, 255, 1) 0%, rgba(102, 237, 255, 1) 100%) !important;
+}
+
+.ht-lg {
+    height: 40vw !important;
+}
+
+.z-11 {
+    z-index: 11 !important;
+}
+
+.card-img {
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.img-div {
+    height: 200px !important;
+}
+
+.bg-xlgrey {
+    background-color: rgb(242, 242, 242);
+}
+
+.show {
+    opacity: 1;
+    transition: opacity .4s;
+}
+
+.hide {
+    opacity: 0;
+    transition: opacity .4s;
+}
+
+.template {
+    /* height: 100vh;
+    width: 100vw; */
+}
+
+.template::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.506);
+}
+
+.circle{
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+}
+
+.red{
+    background-color: red;
+}
+
+.black{
+    background-color: black;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
