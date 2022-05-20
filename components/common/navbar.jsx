@@ -19,7 +19,7 @@ export function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light px-lg-3 border-bottom">
             <div className="container-fluid">
-                <a className={`${style.navName}`} href="/">sh<span className="text-info pt-0">I</span>p</a>
+                {/* <a className={`${style.navName}`} href="/">sh<span className="text-info pt-0">I</span>p</a> */}
                 <button
                     className="navbar-toggler"
                     type="button"

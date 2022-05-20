@@ -2,6 +2,7 @@
 import styles from '../styles/Home.module.css'
 import { Navbar } from '../components/common/navbar'
 import { TopSellerComp } from '../components/home/topSeller'
+import Script from 'next/script'
 
 import Head from 'next/head'
 import { store } from '../redux/store'
@@ -18,16 +19,17 @@ export async function getStaticProps() {
 }
 
 
-export default function ({ data }) {
+export default function home({ data }) {
     store.dispatch(addProdReducer(data))
     return (
         <>
             <Head>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+                
             </Head>
             <Navbar />
             <Top />
+            <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" />
             <TopSellerComp />
         </>
     )
